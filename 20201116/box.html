@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>box위에 키보드로입력하기</title>
+        <style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: hsl(84, 66%, 89%);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="boxbox" class="box">입력o.o</div>
+        <script>
+            const box = document.querySelector('#boxbox')
+            document.body.addEventListener('keypress', e => {
+                const currentValue = box.innerText
+                box.innerText = currentValue + e.key
+            })
+        </script>
+    </body>
+</html>
