@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>회원가입</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            background-color: rgb(27, 27, 27);
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .login-layout {
+            margin: 0px auto;
+            width: 560px;
+            height: 650px;
+            background-color: rgb(37, 37, 37);
+        }
+
+        .login-layout h2 {
+            margin: 0px 0px 40px;
+            font-weight: 400;
+            font-size: 32px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding-top: 20px;
+        }
+
+        .login-box > h4 {
+            text-align: center;
+            color: rgb(165, 165, 165);
+            font-size: 18px;
+            font-weight: 400;
+            padding-bottom: 15px;
+        }
+
+        .boxbox {
+            padding: 0 40px;
+        }
+
+        .form-box-field-input {
+            width: 100%;
+            height: 53px;
+            background-color: rgb(47, 47, 47);
+            padding-left: 15px;
+            border: 0;
+            color: #fff;
+            font-size: 15px;
+            height: 53px;
+            border-radius: 5px;
+        }
+
+        .input-id {
+            padding: 15px 0 15px 0;
+        }
+
+        .input-password {
+            padding: 15px 0 10px 0;
+        }
+
+        .a {
+            padding-left: 0px;
+        }
+
+        .b {
+            padding: 0 80px 0 80px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 0 5px 0 5px;
+            color: #a5a5a5;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .input-login .form-box-field-input {
+            background-color: #1351f9;
+            border-radius: 30px;
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            font-size: 17px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .bar-box {
+            text-align: center;
+            font-size: 18px;
+            color: #a5a5a5;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        img {
+            padding : 0 80px 0 80px;
+            cursor: pointer;
+        }
+
+        h6 {
+            text-align: center;
+            color:  #717171;
+            font-size: 12px;
+        }
+        .sns-sns {
+            padding-left: 12px;
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 22px;
+            color: #717171;
+        }
+
+        .sns-sns span {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-layout">
+        <h2>로그인</h2>
+        <div class="login-box">
+            <h4>WAVVE 계정으로 로그인</h4>
+            <form class="boxbox">
+                <div class="input-id">
+                    <input class="form-box-field-input" type="text" placeholder="이메일 주소 또는 아이디" />
+                </div>
+                <div class="input-password">
+                    <input class="form-box-field-input" type="text" placeholder="비밀번호" />
+                </div>
+                <div class="check-box">
+                    <ul class="a">
+                        <li>
+                            <input id="id-save" type="checkbox">
+                            <label for="id-save">아이디 저장</label>
+                        </li>
+                        <li>
+                            <input id="login-auto" type="checkbox">
+                            <label for="login-auto">자동 로그인</label>
+                        </li>
+                    </ul>
+                    <div class="input-login">
+                        <input class="form-box-field-input" type="submit" value="로그인"/>
+                    </div>
+                </div>
+                <div class="btn-button">
+                    <ul class="b">
+                        <li>
+                            <a>아이디 찾기</a>
+                        </li>
+                        <li>
+                            <a>비밀번호 재설정</a>
+                        </li>
+                        <li>
+                            <a>회원가입</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <form class="boxbox">
+                <div class="bar-box">
+                    <h5>또는 다른 서비스 계정으로 로그인</h5>
+                </div>
+                <div class="sns box">
+                    <img src="login.PNG">
+                    <p class="sns-sns">
+                    <span>SNS 계정으로 간편하게 가입하여 서비스를 이용하실 수 있습니다.</span>
+                    <span>기존 POOQ 계정 또는 wavve 계정과는 연동되지 않으니 이용에 참고하세요.</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
